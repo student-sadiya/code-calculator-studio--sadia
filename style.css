@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+
+.calculator{
+
+    width:320px;
+    padding:20px;
+    border-radius:20px;
+
+    background:#1e1e2f;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,0.3);
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+
+}
+
+
+input{
+
+    grid-column:span 4;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:30px;
+
+    text-align:right;
+
+    padding:10px;
+
+    outline:none;
+
+}
+
+
+button{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    background:#374151;
+
+    color:white;
+
+    transition:0.3s;
+
+}
+
+
+button:hover{
+
+    background:#6366f1;
+
+    transform:scale(1.05);
+
+}
+
+
+/* Equal button */
+
+button:nth-last-child(1){
+
+    background:#22c55e;
+
+}
+
+
+/* Clear button */
+
+button:first-of-type{
+
+    background:#ef4444;
+
+}
